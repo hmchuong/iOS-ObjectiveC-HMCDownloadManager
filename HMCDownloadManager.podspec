@@ -21,10 +21,10 @@ Pod::Spec.new do |s|
 Download multiple files concurrently (same or not same URL). We can set maximumDownloadItem for number of maximum items can be downloaded concurrently. We can choose between background (items can be downloaded when app is in background) or default download manager. Callback each block for each item in different queues.
                        DESC
 
-  s.homepage         = 'https://github.com/chuonghuynh/HMCDownloadManager'
+  s.homepage         = 'https://github.com/hmchuong/iOS-ObjectiveC-HMCDownloadManager'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Chuong M. Huynh' => 'minhchuong.itus@gmail.com' }
-  s.source           = { :git => 'https://github.com/chuonghuynh/HMCDownloadManager.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/hmchuong/iOS-ObjectiveC-HMCDownloadManager.git', :tag => s.version.to_s }
 
   s.source_files = 'HMCDownloadManager/Classes/**/*'
 
