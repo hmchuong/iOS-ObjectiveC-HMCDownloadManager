@@ -11,5 +11,5 @@ before_install:
 - pod repo update
 - pod install --project-directory=Example
 script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/HMCDownloadManager.xcworkspace -scheme HMCDownloadManager-Example -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.3' clean build test | xcpretty
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/HMCDownloadManager.xcworkspace -scheme HMCDownloadManager-Example -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.3.1' clean build test | xcpretty
 - pod lib lint --allow-warnings
