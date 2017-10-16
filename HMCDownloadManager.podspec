@@ -26,6 +26,8 @@ Download multiple files concurrently (same or not same URL). We can set maximumD
   s.author           = { 'Chuong M. Huynh' => 'minhchuong.itus@gmail.com' }
   s.source           = { :git => 'https://github.com/hmchuong/iOS-ObjectiveC-HMCDownloadManager.git', :tag => s.version.to_s }
 
+  s.ios.deployment_target = '8.0'
+
   s.source_files = 'HMCDownloadManager/Classes/**/*'
 
   # s.resource_bundles = {
