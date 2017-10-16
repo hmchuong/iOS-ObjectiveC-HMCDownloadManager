@@ -3,7 +3,7 @@ use_frameworks!
 target 'HMCDownloadManager_Example' do
   pod 'Nimbus', '~> 1.3.0'
   pod 'HMCDownloadManager', :path => '../'
-  pod 'HMCImageCache', '~> 0.1.1'
+  pod 'HMCImageCache', '~> 0.1.2'
 
   target 'HMCDownloadManager_Tests' do
     inherit! :search_paths
