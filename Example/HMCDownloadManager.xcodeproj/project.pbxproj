@@ -24,6 +24,9 @@
 		85F5D44C6843C6D1918E1292 /* Pods_HMCDownloadManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91617B4C87394B88B2AFF1F /* Pods_HMCDownloadManager_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B984EE8CA5EF5AA3897C8190 /* Pods_HMCDownloadManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4AEDEFE8908B2E932519CE /* Pods_HMCDownloadManager_Example.framework */; };
+		C8DC44911F948E90003BE3DB /* HMCImageDownloaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DC448F1F948E90003BE3DB /* HMCImageDownloaderCell.m */; };
+		C8DC44921F948E90003BE3DB /* HMCImageDownloaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DC44901F948E90003BE3DB /* HMCImageDownloaderCell.xib */; };
+		C8DC44941F949123003BE3DB /* urls.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8DC44931F949123003BE3DB /* urls.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,7 @@
 /* Begin PBXFileReference section */
 		1A6AB997D9E3DC0304D248E4 /* Pods-HMCDownloadManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMCDownloadManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HMCDownloadManager_Tests/Pods-HMCDownloadManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2715C88EE484896B2ED30A7C /* Pods-HMCDownloadManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMCDownloadManager_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HMCDownloadManager_Tests/Pods-HMCDownloadManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		58987FC82AE3228AB60CDD26 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		58987FC82AE3228AB60CDD26 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* HMCDownloadManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HMCDownloadManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,12 +62,16 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		61F2AF8B303F820F6356B97F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		62B6CCD4DE5D1A038AF7BBF2 /* HMCDownloadManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HMCDownloadManager.podspec; path = ../HMCDownloadManager.podspec; sourceTree = "<group>"; };
+		61F2AF8B303F820F6356B97F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		62B6CCD4DE5D1A038AF7BBF2 /* HMCDownloadManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HMCDownloadManager.podspec; path = ../HMCDownloadManager.podspec; sourceTree = "<group>"; };
 		6D0DBCC670FC55C3612DF963 /* Pods-HMCDownloadManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMCDownloadManager_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HMCDownloadManager_Example/Pods-HMCDownloadManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3E517776A9DA00CB75EFF21 /* Pods-HMCDownloadManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMCDownloadManager_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HMCDownloadManager_Example/Pods-HMCDownloadManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C8DC448E1F948E90003BE3DB /* HMCImageDownloaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMCImageDownloaderCell.h; sourceTree = "<group>"; };
+		C8DC448F1F948E90003BE3DB /* HMCImageDownloaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMCImageDownloaderCell.m; sourceTree = "<group>"; };
+		C8DC44901F948E90003BE3DB /* HMCImageDownloaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMCImageDownloaderCell.xib; sourceTree = "<group>"; };
+		C8DC44931F949123003BE3DB /* urls.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = urls.plist; sourceTree = "<group>"; };
 		E91617B4C87394B88B2AFF1F /* Pods_HMCDownloadManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HMCDownloadManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB4AEDEFE8908B2E932519CE /* Pods_HMCDownloadManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HMCDownloadManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -143,6 +150,7 @@
 		6003F593195388D20070C39A /* Example for HMCDownloadManager */ = {
 			isa = PBXGroup;
 			children = (
+				C8DC448D1F948E90003BE3DB /* Nimbus Cell */,
 				6003F59C195388D20070C39A /* HMCAppDelegate.h */,
 				6003F59D195388D20070C39A /* HMCAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -150,6 +158,7 @@
 				6003F5A6195388D20070C39A /* HMCViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				C8DC44931F949123003BE3DB /* urls.plist */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for HMCDownloadManager";
@@ -195,6 +204,16 @@
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
+		};
+		C8DC448D1F948E90003BE3DB /* Nimbus Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C8DC448E1F948E90003BE3DB /* HMCImageDownloaderCell.h */,
+				C8DC448F1F948E90003BE3DB /* HMCImageDownloaderCell.m */,
+				C8DC44901F948E90003BE3DB /* HMCImageDownloaderCell.xib */,
+			);
+			path = "Nimbus Cell";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -281,6 +300,8 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				C8DC44941F949123003BE3DB /* urls.plist in Resources */,
+				C8DC44921F948E90003BE3DB /* HMCImageDownloaderCell.xib in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -394,6 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8DC44911F948E90003BE3DB /* HMCImageDownloaderCell.m in Sources */,
 				6003F59E195388D20070C39A /* HMCAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* HMCViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,

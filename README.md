@@ -1,6 +1,6 @@
 # HMCDownloadManager
 
-[![CI Status](http://img.shields.io/travis/hmchuong/HMCDownloadManager.svg?style=flat)](https://travis-ci.org/hmchuong/HMCDownloadManager)
+[![CI Status](http://img.shields.io/travis/chuonghuynh/HMCDownloadManager.svg?style=flat)](https://travis-ci.org/chuonghuynh/HMCDownloadManager)
 [![Version](https://img.shields.io/cocoapods/v/HMCDownloadManager.svg?style=flat)](http://cocoapods.org/pods/HMCDownloadManager)
 [![License](https://img.shields.io/cocoapods/l/HMCDownloadManager.svg?style=flat)](http://cocoapods.org/pods/HMCDownloadManager)
 [![Platform](https://img.shields.io/cocoapods/p/HMCDownloadManager.svg?style=flat)](http://cocoapods.org/pods/HMCDownloadManager)
@@ -22,7 +22,7 @@ pod 'HMCDownloadManager'
 
 ## Author
 
-hmchuong, minhchuong.itus@gmail.com
+chuonghuynh, minhchuong.itus@gmail.com
 
 ## License
 

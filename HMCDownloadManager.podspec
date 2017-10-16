@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'HMCDownloadManager'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of HMCDownloadManager.'
+  s.summary          = 'HMCDownloadManager is a wrapper supporting downloading multiple files within a singleton object'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,20 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Download multiple files concurrently (same or not same URL). We can set maximumDownloadItem for number of maximum items can be downloaded concurrently. We can choose between background (items can be downloaded when app is in background) or default download manager. Callback each block for each item in different queues.
                        DESC
 
-  s.homepage         = 'https://github.com/hmchuong/HMCDownloadManager'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/chuonghuynh/HMCDownloadManager'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'hmchuong' => 'minhchuong.itus@gmail.com' }
-  s.source           = { :git => 'https://github.com/hmchuong/HMCDownloadManager.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
+  s.author           = { 'Chuong M. Huynh' => 'minhchuong.itus@gmail.com' }
+  s.source           = { :git => 'https://github.com/chuonghuynh/HMCDownloadManager.git', :tag => s.version.to_s }
 
   s.source_files = 'HMCDownloadManager/Classes/**/*'
-  
+
   # s.resource_bundles = {
   #   'HMCDownloadManager' => ['HMCDownloadManager/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit'
 end
