@@ -1,6 +1,7 @@
 # HMCDownloadManager
-
+<!----
 [![Build Status](https://travis-ci.org/hmchuong/iOS-ObjectiveC-HMCDownloadManager.svg?branch=master)](https://travis-ci.org/hmchuong/iOS-ObjectiveC-HMCDownloadManager)
+--->
 [![Version](https://img.shields.io/cocoapods/v/HMCDownloadManager.svg?style=flat)](http://cocoapods.org/pods/HMCDownloadManager)
 [![License](https://img.shields.io/cocoapods/l/HMCDownloadManager.svg?style=flat)](http://cocoapods.org/pods/HMCDownloadManager)
 [![Platform](https://img.shields.io/cocoapods/p/HMCDownloadManager.svg?style=flat)](http://cocoapods.org/pods/HMCDownloadManager)
@@ -43,7 +44,7 @@ HMCDownloadManager *defaultDownload = [HMCDownloadManager sharedDefaultManager];
 
 ### To get background download manager
 ```ObjectiveC
-HMCDownloadManager *defaultDownload = [HMCDownloadManager sharedBackgroundManager];
+HMCDownloadManager *backgroundDownload = [HMCDownloadManager sharedBackgroundManager];
 ```
 
 ### To edit maximum waiting time for the next data receiving for default manager
@@ -51,15 +52,47 @@ HMCDownloadManager *defaultDownload = [HMCDownloadManager sharedBackgroundManage
 defaultDownload.timeoutForRequest = 5.0;
 ```
 
-### To edit
+### To edit maximum life time for downloading item 
+```ObjectiveC
+defaultDownload.timeoutForResource = 3600;
+backgroundDownload.timeoutForResource = 3600;
+```
+
+### To edit maximum downloading items concurrently
+```ObjectiveC
+defaultDownload.maximumDownloadItems = 10;
+```
 
 ### To start download from URL
+```ObjectiveC
+dispatch_queue_t downloadQueue = dispatch_queue_create("Image Downloader", DISPATCH_QUEUE_SERIAL);
+[defaultDownload startDownloadFromURL:url
+                             progressBlock:^(NSURL *sourceUrl, NSString *identifier, int64_t bytesWritten, int64_t totalBytesWritten, int64_t totalBytesExpectedToWrite) {
+                                 
+                                 // Update UI progress
+                                 
+                             } destination:^NSURL *(NSURL *sourceUrl, NSString *identifier) {
+                                 // return destination file
+                             } finishBlock:^(NSURL *sourceUrl, NSString *identifier, NSURL *fileLocation, NSError *error) {
+                                 
+                                 // Update when finished downloading
+                             } queue:downloadQueue];
+```
 
 ### To pause download from URL
+```ObjectiveC
+[downloadManager pauseDownload:url];
+```
 
 ### To resume download from URL
+```ObjectiveC
+[downloadManager resumeDownload:url];
+```
 
 ### To cancel download from URL
+```ObjectiveC
+[downloadManager cancelDownload:url];
+```
 
 ## Author
 
