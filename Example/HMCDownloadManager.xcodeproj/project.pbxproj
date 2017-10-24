@@ -575,6 +575,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2715C88EE484896B2ED30A7C /* Pods-HMCDownloadManager_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -599,6 +600,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1A6AB997D9E3DC0304D248E4 /* Pods-HMCDownloadManager_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
