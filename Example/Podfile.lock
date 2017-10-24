@@ -31,7 +31,7 @@ PODS:
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
   - HMCDownloadManager (0.1.0)
-  - HMCImageCache (0.1.1):
+  - HMCImageCache (0.1.2):
     - HMCThreadSafeMutableCollection (~> 0.1.0)
   - HMCThreadSafeMutableCollection (0.1.0)
   - Nimbus (1.3.0):
@@ -92,25 +92,25 @@ DEPENDENCIES:
   - Expecta+Snapshots
   - FBSnapshotTestCase
   - HMCDownloadManager (from `../`)
-  - HMCImageCache (~> 0.1.1)
+  - HMCImageCache (~> 0.1.2)
   - Nimbus (~> 1.3.0)
   - Specta
 
 EXTERNAL SOURCES:
   HMCDownloadManager:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   Expecta+Snapshots: dcff217eef506dabd6dfdc7864ea2da321fafbb8
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  HMCDownloadManager: 8d0c235c2fcb77972d5d53d39cb0073ad3a2f44e
-  HMCImageCache: b752491c43746e7c65e2f90511ab0782b3a00136
+  FBSnapshotTestCase: '094f9f314decbabe373b87cc339bea235a63e07a'
+  HMCDownloadManager: a053a9f8250030e3fb07479ef981421160f0cb57
+  HMCImageCache: 6e08da99290ae97612a04f14c557a5bc8dde5e7f
   HMCThreadSafeMutableCollection: 16d137f0d3480fe66fe04ba7e288a7e5a5e3d224
   Nimbus: e7f33bc6d6cb4fe5ea0aee0c7e0883696123422c
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
-PODFILE CHECKSUM: 4d866ac841949f50dd64b8cf4554e86507453a95
+PODFILE CHECKSUM: 8ce3e2be4ae1e8c7b2f90405bed69919788e0494
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.1.1
