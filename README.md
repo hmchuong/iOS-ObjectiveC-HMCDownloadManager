@@ -1,7 +1,5 @@
 # HMCDownloadManager
-<!----
 [![Build Status](https://travis-ci.org/hmchuong/iOS-ObjectiveC-HMCDownloadManager.svg?branch=master)](https://travis-ci.org/hmchuong/iOS-ObjectiveC-HMCDownloadManager)
---->
 [![Version](https://img.shields.io/cocoapods/v/HMCDownloadManager.svg?style=flat)](http://cocoapods.org/pods/HMCDownloadManager)
 [![License](https://img.shields.io/cocoapods/l/HMCDownloadManager.svg?style=flat)](http://cocoapods.org/pods/HMCDownloadManager)
 [![Platform](https://img.shields.io/cocoapods/p/HMCDownloadManager.svg?style=flat)](http://cocoapods.org/pods/HMCDownloadManager)
